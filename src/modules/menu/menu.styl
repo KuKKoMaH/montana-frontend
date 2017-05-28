@@ -1,14 +1,19 @@
 .container
   margin: 0
-  padding: 1em 1em 0
+  padding: .5em .5em 0
 
 .item
   list-style: none
   padding-bottom: 1em
 
   a
+    padding: .2em .5em
     color: inherit
     text-decoration: none
-    display: inline-block
+    display: block
+    border-radius: 4px
     &:hover
       text-decoration: underline
+
+    &:global(.current-menu-item)
+      background: $grey-dark

@@ -19,6 +19,18 @@ module.exports = function ( entries, globals ) {
     module:  {
       rules: [
         {
+          test: require.resolve("jquery"),
+          use:  [
+            {
+              loader:  'expose-loader',
+              options: 'jQuery'
+            }, {
+              loader:  'expose-loader',
+              options: '$'
+            },
+          ]
+        },
+        {
           test:    /\.js$/,
           exclude: /node_modules/,
           loader:  'babel-loader',
@@ -26,7 +38,7 @@ module.exports = function ( entries, globals ) {
             presets: ['es2015', 'stage-2'],
           }
         },
-      ]
+      ],
     },
     plugins: [
       new webpack.DefinePlugin(utils.convertStyles(globals.styles)),
@@ -59,4 +71,5 @@ module.exports = function ( entries, globals ) {
       resolve(jsonStats);
     });
   })
-};
+}
+;
