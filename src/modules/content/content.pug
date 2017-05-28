@@ -1,0 +1,11 @@
+include ../title/title
+
+mixin content(title)
+  .content-container
+    .content-content
+      +title(): h1.content-title= title
+      .content-text
+        if block
+          block
+
+    include ../footer/footer

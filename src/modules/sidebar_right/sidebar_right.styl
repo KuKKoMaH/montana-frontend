@@ -1,0 +1,16 @@
+.container
+  float: right
+  width: round((100 / $cols-number * 3)%, 3)
+  padding-left: $gutter-half
+  padding-right: $gutter-half
+
+  @media (max-width: $breakpoint-md - 1)
+    float: none
+    width: auto
+
+  @media (max-width: $breakpoint-sm - 1)
+    padding: 0
+
+
+.content
+  background: $grey

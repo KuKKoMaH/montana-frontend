@@ -1,0 +1,112 @@
+.wrapper
+  margin: 1em 0
+
+.logo
+  width: 28%
+  text-align: right
+  vertical-align: middle
+
+  img
+    max-height: 100%
+
+  @media (max-width: $breakpoint-sm - 1)
+    width: inherit
+    text-align: center
+    height: 100px
+
+.content
+  width: 44%
+  vertical-align: middle
+
+  @media (max-width: $breakpoint-sm - 1)
+    width: inherit
+
+.title
+  font-size: 6em
+  line-height: 1
+  font-weight: bold
+  text-align: center
+
+  @media (max-width: $breakpoint-md - 1)
+    font-size: 4em
+
+.subtitle
+  font-size: 1.3em
+  font-weight: bold
+  text-align: center
+
+  @media (max-width: $breakpoint-lg - 1)
+    font-size: 1em
+
+  @media (max-width: $breakpoint-md - 1)
+    font-size: .8em
+
+.contact
+  width: 28%
+  vertical-align: middle
+
+  @media (max-width: $breakpoint-sm - 1)
+    width: inherit
+
+.block
+  background: $grey
+  text-align: center
+  padding: 1.5em 0
+
+  @media (max-width: $breakpoint-lg - 1)
+    font-size: .8em
+
+  @media (max-width: $breakpoint-md - 1)
+    font-size: .6em
+
+  @media (max-width: $breakpoint-sm - 1)
+    margin-top: 1em
+
+.wtf
+  font-size: 3.5em
+  font-weight: bold
+
+.phone
+  margin-top: .5em
+  font-size: 2em
+
+.buttons
+  margin-top: 1em
+  text-align: justify
+  line-height: 0
+
+  ul
+    margin: 0
+    padding: 0
+
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: top
+      width: 100%
+
+  li
+    text-decoration: none
+    display: inline-block
+    vertical-align: top
+    width: 140px
+
+    @media (max-width: $breakpoint-sm - 1)
+      width: 100px
+
+.button
+  display: block
+  background: $grey
+  border-radius: 4px
+  line-height: 35px
+  height: 35px
+  text-align: center
+  color: inherit
+  text-decoration: none
+  transition: all .1s ease-out
+  position: relative
+  z-index: 1
+
+  &:hover
+    background: $grey-dark
+
