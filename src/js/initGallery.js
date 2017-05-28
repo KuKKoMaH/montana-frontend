@@ -30,6 +30,7 @@ module.exports = function initGalley( config ) {
         getDoubleTapZoom:        function ( isMouseClick, item ) {
           return item.initialZoomLevel;
         },
+        pinchToClose:            false,
         clickToCloseNonZoomable: false
       }
     );
