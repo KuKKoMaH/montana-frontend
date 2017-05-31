@@ -1,11 +1,14 @@
 include ../title/title
 
 mixin content(title)
-  .content-container
-    .content-content
-      +title(): h1.content-title= title
-      .content-text
-        if block
-          block
-
-    include ../footer/footer
+  .content-wrapper
+    .content-container
+      .content-row
+        .content-content
+          +title.content-row.content-h1(): h1.content-title= title
+          .content-text
+            .content-text_inner
+              if block
+                block
+      .content-row.content-h1
+        include ../footer/footer

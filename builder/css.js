@@ -18,7 +18,7 @@ var utils = require('./utils');
 var config = require('../config');
 
 var extensions = {
-  images: ['.jpg', '.jpeg', '.gif', '.png'],
+  images: ['.jpg', '.jpeg', '.gif', '.png', '.svg'],
   fonts:  ['.eot', '.woff', '.woff2']
 };
 

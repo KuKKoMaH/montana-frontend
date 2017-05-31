@@ -1,19 +1,23 @@
 .container
-  position: absolute
-  left: 0
-  bottom: 0
-  width: round((100 / $cols-number * 3)%, 3)
   text-align: center
 
-  @media (max-width: $breakpoint-md - 1)
-    position: relative
-    width: auto
-    margin-top: 1em
+  @media (max-width: $breakpoint-lg - 1)
+    margin-bottom: 0
+//  position: absolute
+//  left: 0
+//  bottom: 0
+//  width: round((100 / $cols-number * 3)%, 3)
+//
+//  @media (max-width: $breakpoint-md - 1)
+//    position: relative
+//    width: auto
+//    margin-top: 1em
 
 .text
   display: inline-block
   text-align: left
   margin-bottom: 1em
+
 
 .img
   display: block

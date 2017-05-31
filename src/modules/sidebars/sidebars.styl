@@ -1,6 +1,9 @@
 .content
-  @media (max-width: $breakpoint-md - 1)
-    float: left
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1)
+    position: absolute
+    left: 0
+    height: 100%
+    overflow: hidden
     width: round((100 / $cols-number * 4)%, 3)
 
   @media (max-width: $breakpoint-sm - 1)
@@ -39,3 +42,27 @@
 .close
   background-image: url(modules/sidebars/sprite-close.svg)
   right: $gutter-half
+
+.plush
+  position: absolute
+  bottom: 1em
+  width: round((100 / $cols-number * 3)%, 3)
+  text-align: center
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    display: none
+
+  @media (max-width: $breakpoint-md - 1)
+    position: relative
+    width: auto
+    margin-top: 1em
+
+.left
+  left: 0
+
+.right
+  right: 0
+
+  @media (max-width: $breakpoint-md - 1)
+    display: none
+

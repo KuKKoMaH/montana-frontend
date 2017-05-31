@@ -3,6 +3,14 @@
   width: round((100 / $cols-number * 3)%, 3)
   padding-left: $gutter-half
   padding-right: $gutter-half
+  position: relative
+  z-index: 1
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    position: absolute
+    right: 0
+    overflow: hidden
+    max-height: 100%
 
   @media (max-width: $breakpoint-md - 1)
     float: none
@@ -11,6 +19,12 @@
   @media (max-width: $breakpoint-sm - 1)
     padding: 0
 
-
 .content
   background: $grey
+
+.plush
+  display: none
+  //margin-top: 1em
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    display: block

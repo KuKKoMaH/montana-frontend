@@ -4,6 +4,15 @@
   padding-left: $gutter-half
   padding-right: $gutter-half
   margin-bottom: $gutter-half * 2
+  position: relative
+  z-index: 1
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    position: absolute
+    left: 0
+    overflow: hidden
+    max-height: 100%
+    margin: 0
 
   @media (max-width: $breakpoint-md - 1)
     float: none
@@ -14,3 +23,10 @@
 
 .content
   background: $grey
+
+.plush
+  display: none
+  //margin-top: 1em
+
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1)
+    display: block

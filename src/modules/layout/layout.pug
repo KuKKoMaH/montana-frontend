@@ -10,11 +10,13 @@ html
     :styles
 
   body
-    .w
-      include ../header/header
-      .layout-container
-        include ../sidebars/sidebars
-        block body
+    .w.layout-wrapper
+      div.layout-row.layout-top
+        include ../header/header
+      div.layout-row
+        .layout-container
+          include ../sidebars/sidebars
+          block body
 
     include ../photoswipe/photoswipe
 
