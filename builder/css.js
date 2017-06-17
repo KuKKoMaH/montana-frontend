@@ -19,7 +19,7 @@ var config = require('../config');
 
 var extensions = {
   images: ['.jpg', '.jpeg', '.gif', '.png', '.svg'],
-  fonts:  ['.eot', '.woff', '.woff2']
+  fonts:  ['.eot', '.woff', '.woff2', '.ttf']
 };
 
 /**

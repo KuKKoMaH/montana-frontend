@@ -1,6 +1,13 @@
 .container
   text-align: center
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAAaUlEQVQImT2OMRLDQBDCWP3/wwesk+KctGKkQZKkbYfd/dDd4dmKtmLboY1IOyQRjUWaIclQWzgeYovEIvZgHxEbHH/wy4acI3y1w9V8jshbGfxWXuZ/NPkdajz3ZBqxd6jYp2K7wz6rL2Frg+Op4dCoAAAAAElFTkSuQmCC') repeat-x;
+  //background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAAaUlEQVQImT2OMRLDQBDCWP3/wwesk+KctGKkQZKkbYfd/dDd4dmKtmLboY1IOyQRjUWaIclQWzgeYovEIvZgHxEbHH/wy4acI3y1w9V8jshbGfxWXuZ/NPkdajz3ZBqxd6jYp2K7wz6rL2Frg+Op4dCoAAAAAElFTkSuQmCC') repeat-x;
   background-size: contain
   line-height: 45px
   font-weight: bold
+
+  &:after
+    content: ''
+    display: block
+    margin: 0 1.5em
+    height: 1px
+    background: $white

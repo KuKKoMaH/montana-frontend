@@ -1,8 +1,8 @@
 .wrapper
-  width: round((100 / $cols-number * 6)%, 3)
+  width: 54%
   padding-left: $gutter-half
   padding-right: $gutter-half
-  margin-left: round((100 / $cols-number * 3)%, 3)
+  margin-left: 23%
   height: 100%
 
   @media (max-width: $breakpoint-md - 1)
@@ -42,13 +42,15 @@
   width: 100%
   height: 100%
   background: $grey
+  border: 1px solid $grey-dark
 
   @media (max-width: $breakpoint-sm - 1)
     height: auto
     display: block
 
 .title
-  font-size: 1.5em
+  font-size: 1em
+  //font-size: 1.5em
   margin: 0
   padding: 0
 
@@ -61,7 +63,7 @@
 .text_inner
   height: 100%
   overflow-y: auto
-  padding: 1em 2em 0
+  padding: 1em 1em 0
 
   @media (max-width: $breakpoint-sm - 1)
     padding: 1em
